@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: querybot-app-fe
-          image: aloksahni/querybot-app-fe:latest
+          image: aloksahni/querybot_app_fe:latest
           ports:
             - containerPort: 3000  # Adjust based on your app's listening port        
 ---
