@@ -1,0 +1,125 @@
+/* Ensure the page and body take up the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f5f7; /* Light background for contrast */
+}
+
+/* Chatbot container fills the entire viewport */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Full viewport height */
+    max-width: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #545184, #353981, #1f1a7d, #110381); /* Gradient background */
+    color: white; /* Text color */
+}
+
+/* Chat window styling */
+.chat-window {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+    border-bottom: 1px solid #fff; /* White border for visibility */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    /* border-radius: 10px;  */
+}
+
+/* Individual message styling */
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 75%;
+    font-size: 16px;
+}
+
+.message.user {
+    background-color: #f9f7f8; 
+    color: black;
+    margin-left: auto;
+    text-align: right;
+    overflow: hidden;
+    
+}
+
+.message.bot {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Modern chat input design */
+.chat-input-form {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input field styling */
+.chat-input {
+    flex: 1;
+    border: 2px solid #1f1a7d; /* Red border */
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Focus state for input */
+.chat-input:focus {
+    border-color: #ee7724; /* Highlight on focus */
+    outline: none;
+}
+
+/* Circular file input button with an icon */
+.file-input-btn {
+    background-color: #1f1a7d; /* Color for file input button */
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Space between button and input */
+}
+
+.file-input-btn:hover {
+    background-color: #ee7724; /* Highlight on hover */
+}
+
+/* Send button styling */
+.send-button {
+    background-color: #1f1a7d; /* Color for send button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #1f1a7d; /* Highlight on hover */
+}
+
+/* Hide the actual file input */
+.visually-hidden {
+    display: none;
+}
+
+/* File name display */
+.file-name {
+    max-width: 150px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ellipsis for long file names */
+}

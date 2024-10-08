@@ -1,0 +1,33 @@
+/* Make the container cover the full page */
+.pdf-upload-container {
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Light gray background for better contrast */
+  }
+
+  .uploadHeader{
+    background: linear-gradient(to right, #545184, #353981, #1f1a7d, #110381); /* Gradient background */
+    color: #fff;
+  }
+   
+  /* Centering the box with padding and shadow */
+  .pdf-upload-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+  }
+   
+  /* Add some spacing to the input field */
+  .pdf-upload-box .form-control {
+    height: 45px;
+    font-size: 1rem;
+  }
+   
+  /* Style the button to cover the full width */
+  .pdf-upload-box .btn {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
